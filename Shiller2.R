@@ -5,7 +5,7 @@ Shiller2 <- function(dest.dir,
                      "ie_data.xls")
    
   #file.path(normalizePath(dest.dir), f.name, fsep = "\")
-   f.path <- paste0(dest.dir,'\\', f.name)
+   f.path <- paste0(normalizePath(dest.dir),'\\', f.name)
    
     print(f.path)
 

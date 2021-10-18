@@ -3,7 +3,7 @@ Shiller2 <- function(dest.dir,
 
     f.name <- paste0(format(Sys.Date(), "%Y%m%d_"),
                      "ie_data.xls")
-    f.path <- file.path(normalizePath(dest.dir), f.name, fsep = .Platform$file.sep)
+    f.path <- file.path(normalizePath(dest.dir, winslash = "\\"), f.name, fsep = .Platform$file.sep)
 
     if (!file.exists(f.path))
         dl.result <- download.file(url, destfile = f.path)

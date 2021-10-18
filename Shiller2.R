@@ -3,7 +3,9 @@ Shiller2 <- function(dest.dir,
 
     f.name <- paste0(format(Sys.Date(), "%Y%m%d_"),
                      "ie_data.xls")
-    f.path <- file.path(normalizePath(dest.dir), f.name, fsep = "\")
+   
+  #file.path(normalizePath(dest.dir), f.name, fsep = "\")
+   f.path <- paste0(dest.dir,'\\', f.name)
    
     print(f.path)
 

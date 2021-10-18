@@ -4,7 +4,7 @@ Shiller2 <- function(dest.dir,
     f.name <- paste0(format(Sys.Date(), "%Y%m%d_"),
                      "ie_data.xls")
     f.path <- file.path(normalizePath(dest.dir), f.name, fsep = "\")
-  
+   
     print(f.path)
 
     if (!file.exists(f.path))
